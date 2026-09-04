@@ -1,5 +1,5 @@
 .forms-container{
-    background-color: rgb(235, 238, 229);
+    background-color: linear-gradient(to bottom, pink, purple);
     height:90vh;
     background-size:cover;
     display: flex;
