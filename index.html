@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="forms-container">
+        <h1 class="form-heading">Add User</h1>
+        <form id="myForm">
+            <div class="mb-3">
+                <label for="name">Enter Your Name</label><br>
+                <input id="name" class="form-control">
+                <p id="errorMessage1"></p>
+            </div>
+
+            <div class="mb-3">
+                <label for="email">Enter Your email</label><br>
+                <input id="email" type="email" class="form-control">
+                                <p id="errorMessage2"></p>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="status">Enter Your Working Status</label>
+                <select id="status" class="form-control">
+                    <option value="value1">Active</option>
+                    <option value="value2" selected>In Active</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label>Gender</label><br>
+                <input type="radio" id="genderMale" name="gender" value="Male"> <label for="genderMale" class="me-3">Male</label> 
+                <input type="radio" id="genderFemale" name="gender" value="Female" checked> <label for="genderFemale">Female</label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+                    Submit
+            </Button>
+
+        </form>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>
