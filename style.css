@@ -7,3 +7,108 @@
     justify-content: center;
     align-items: center;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(135deg, #e0e7ff, #f5eaff);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.forms-container {
+    background-color: white;
+    width: 450px;
+    padding: 35px 40px;
+
+    border: 2px solid #d6ccff;
+    border-radius: 18px;
+
+    box-shadow: 0px 8px 25px rgba(70, 50, 120, 0.15);
+}
+
+
+.form-heading {
+    color: #5b35a5;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.forms-container label {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+
+.forms-container .form-control {
+    border: 1.5px solid #d5cbea;
+    border-radius: 8px;
+    padding: 11px 12px;
+    font-size: 15px;
+    margin-top: 5px;
+    background-color: #faf9ff;
+}
+
+/* Input focus effect */
+.forms-container .form-control:focus {
+    border-color: #7545c5;
+    box-shadow: 0 0 6px rgba(117, 69, 197, 0.25);
+    background-color: white;
+}
+
+
+.forms-container p {
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.forms-container input[type="radio"] {
+    accent-color: #7545c5;
+    cursor: pointer;
+}
+
+
+.forms-container .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #7041b8;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.forms-container .btn-primary:hover {
+    background-color: #51258f;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 500px) {
+    .forms-container {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    .form-heading {
+        font-size: 25px;
+    }
+}
